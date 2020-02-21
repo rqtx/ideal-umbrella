@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "5a5d9bd0-8d0f-4545-b05b-4bad1d5be5ef",
+		"name": "ideal-umbrella",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create partner",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "tradingName",
+							"value": "Adega Pinheiros",
+							"type": "text"
+						},
+						{
+							"key": "ownerName",
+							"value": "Ze da Silva",
+							"type": "text"
+						},
+						{
+							"key": "document",
+							"value": "04433714000144",
+							"type": "text"
+						},
+						{
+							"key": "coverageArea",
+							"value": "[\n                [\n                   [\n                      [\n                         -49.36299,\n                         -25.4515\n                      ],\n                      [\n                         -49.35334,\n                         -25.45065\n                      ],\n                      [\n                         -49.33675,\n                         -25.4429\n                      ],\n                      [\n                         -49.32291,\n                         -25.4398\n                      ],\n                      [\n                         -49.3188,\n                         -25.44089\n                      ],\n                      [\n                         -49.31064,\n                         -25.43903\n                      ],\n                      [\n                         -49.29828,\n                         -25.43391\n                      ],\n                      [\n                         -49.29751,\n                         -25.43377\n                      ],\n                      [\n                         -49.29588,\n                         -25.43322\n                      ],\n                      [\n                         -49.29215,\n                         -25.43189\n                      ],\n                      [\n                         -49.28855,\n                         -25.43043\n                      ],\n                      [\n                         -49.28662,\n                         -25.42958\n                      ],\n                      [\n                         -49.28424,\n                         -25.42865\n                      ],\n                      [\n                         -49.25803,\n                         -25.42853\n                      ],\n                      [\n                         -49.25533,\n                         -25.42279\n                      ],\n                      [\n                         -49.25585,\n                         -25.4169\n                      ],\n                      [\n                         -49.25524,\n                         -25.40981\n                      ],\n                      [\n                         -49.25761,\n                         -25.40403\n                      ],\n                      [\n                         -49.25524,\n                         -25.39787\n                      ],\n                      [\n                         -49.26005,\n                         -25.39178\n                      ],\n                      [\n                         -49.26078,\n                         -25.3819\n                      ],\n                      [\n                         -49.26267,\n                         -25.37348\n                      ],\n                      [\n                         -49.25952,\n                         -25.37003\n                      ],\n                      [\n                         -49.25971,\n                         -25.36597\n                      ],\n                      [\n                         -49.26301,\n                         -25.35774\n                      ],\n                      [\n                         -49.26468,\n                         -25.34742\n                      ],\n                      [\n                         -49.30623,\n                         -25.35119\n                      ],\n                      [\n                         -49.36262,\n                         -25.36639\n                      ],\n                      [\n                         -49.37043,\n                         -25.3798\n                      ],\n                      [\n                         -49.36743,\n                         -25.40593\n                      ],\n                      [\n                         -49.36837,\n                         -25.42578\n                      ],\n                      [\n                         -49.36299,\n                         -25.4515\n                      ]\n                   ]\n                ]\n             ]",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "[\n                -49.33425,\n                -25.380995\n             ]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/pdvs/register",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"pdvs",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get partner by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:4000/pdvs/2",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"pdvs",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search partner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4000/pdvs/near/?lng=-49.36299&lat=-25.4515",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"pdvs",
+						"near",
+						""
+					],
+					"query": [
+						{
+							"key": "lng",
+							"value": "-49.36299"
+						},
+						{
+							"key": "lat",
+							"value": "-25.4515"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

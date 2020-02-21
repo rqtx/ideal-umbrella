@@ -1,0 +1,32 @@
+{
+  "name": "ideal-umbrella",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rqtx/ideal-umbrella.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rqtx/ideal-umbrella/issues"
+  },
+  "homepage": "https://github.com/rqtx/ideal-umbrella#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "cpf-cnpj-validator": "^0.1.1",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "geojson-tools": "^0.2.2",
+    "graphql": "^14.6.0",
+    "graphql-geojson": "^1.0.0",
+    "mongoose": "^5.9.1",
+    "mongoose-geojson-schema": "^2.1.5"
+  }
+}
